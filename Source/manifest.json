@@ -1,0 +1,15 @@
+{
+	"manifest_version": 2,
+	"name": "Bitcoin To Buttcoin",
+	"version": "1.0",
+	"description": "Replaces the text 'bitcoin' with 'buttcoin'.",
+	"content_scripts": 
+	[
+		{
+			"matches": ["*://*/*"],
+			"js": ["content_script.js"],
+			"run_at": "document_end"
+		}
+	]
+}
+
